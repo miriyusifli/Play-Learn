@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestFragment">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/test_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            app:srcCompat="@android:color/background_light"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/test_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <!--android:padding="0dp"-->
+
+        <!--android:layout_marginTop="1dp"-->
+
+       <!-- <EditText
+            android:id="@+id/test_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColorLink="#03ae3c"
+            android:textSize="24sp" />-->
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/test_editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:textColor="@color/White"
+                android:inputType="textVisiblePassword"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:theme="@style/EditTextTheme"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_show"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_next"
+                android:text="SHOW"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/button_skip"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_next"
+                android:text="SKIP"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progress_test"
+            style="@style/SpinKitView.Large.DoubleBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/CircleColor" />
+
+    </LinearLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_test_page"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/White"
+        android:visibility="invisible"/>
+
+</FrameLayout>

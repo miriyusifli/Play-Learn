@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="icon_form_margin">110dp</dimen>
+    <dimen name="icon_sign_log">170dp</dimen>
+    <dimen name="sign_log_button_margin">45dp</dimen>
+
+</resources>

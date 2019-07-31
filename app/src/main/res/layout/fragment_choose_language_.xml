@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/choose_language_fragment"
+    tools:context="com.example.miriyusifli.cardgame.Choose_language_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Native Language"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_native"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:background="@drawable/back_icon"
+                android:layout_gravity="center"
+                />
+
+            <com.example.miriyusifli.cardgame.services.AnimatedGifImageView
+                android:id="@+id/GifImageView_native"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/next_native"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:background="@drawable/next_icon"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Language"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_foreign"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back_icon" />
+
+            <com.example.miriyusifli.cardgame.services.AnimatedGifImageView
+                android:id="@+id/GifImageView_foreign"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/next_foreign"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/next_icon" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+
+
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_next"
+                android:text="Next"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

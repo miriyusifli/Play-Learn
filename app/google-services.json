@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "144784256488",
+    "firebase_url": "https://playlearn-9f60e.firebaseio.com",
+    "project_id": "playlearn-9f60e",
+    "storage_bucket": "playlearn-9f60e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144784256488:android:7f8a250dc3b2d4c5",
+        "android_client_info": {
+          "package_name": "com.example.miriyusifli.cardgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144784256488-alfp3fl04jrjp4lvv4t1sn60femth459.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miriyusifli.cardgame",
+            "certificate_hash": "909c893d2cb5f6b49f0e11a120b7c3d2a88725e1"
+          }
+        },
+        {
+          "client_id": "144784256488-m197glf0audg5fmgaidfesenp4msnr06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL6Gjtir2SbFWcx0xJgJL7Vjd5cP-tlFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144784256488-m197glf0audg5fmgaidfesenp4msnr06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

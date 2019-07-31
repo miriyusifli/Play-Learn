@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinFragment">
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+
+        <ImageView
+            android:id="@+id/win_tropy"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/trophy"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/White"
+            android:textSize="40sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/try_again_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:drawableTop="@drawable/play"
+                android:background="@drawable/my_button_square"
+                android:text="Try Again"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/learn_again_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/my_button_square"
+                android:drawableTop="@drawable/learn"
+                android:paddingTop="10dp"
+                android:text="Learn Again"
+                android:textColor="@color/White" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

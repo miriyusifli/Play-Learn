@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    tools:context=".SplashFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <requestFocus />
+
+
+        <ImageView
+            android:id="@+id/test_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_sign_log"
+            android:src="@drawable/icon_image"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_splash"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_marginTop="@dimen/icon_form_margin"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:maxHeight="12dp"
+            android:minHeight="12dp"
+            android:progress="20"
+            android:visibility="invisible"
+            app:backgroundColor="@color/GreenLight"
+            app:progressColor="@color/CircleColor"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

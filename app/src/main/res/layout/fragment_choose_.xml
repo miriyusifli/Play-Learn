@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.miriyusifli.cardgame.Choose_Fragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/left_right_overshoot"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+
+            <Button
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_button_square"
+                android:drawableTop="@drawable/exam"
+                android:textColor="@color/White"
+                android:text="Test" />
+
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_button_square"
+                android:drawableTop="@drawable/play"
+                android:textColor="@color/White"
+                android:text="Start Game" />
+
+            <Button
+                android:id="@+id/learn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_button_square"
+                android:drawableTop="@drawable/learn"
+                android:textColor="@color/White"
+                android:text="Learn Words" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

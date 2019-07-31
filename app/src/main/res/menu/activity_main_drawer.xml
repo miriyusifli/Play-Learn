@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_topics"
+            android:icon="@drawable/topic"
+            android:title="Topics" />
+        <item
+            android:id="@+id/menu_alarm"
+            android:icon="@drawable/alarm"
+            android:title="Alarm" />
+        <item
+            android:id="@+id/menu_change_language"
+            android:icon="@drawable/choose_language"
+            android:title="Change Language" />
+        <item
+            android:id="@+id/menu_all_results"
+            android:icon="@drawable/all_results"
+            android:title="All results" />
+    </group>
+
+
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

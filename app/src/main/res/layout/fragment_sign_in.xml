@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInFragment">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <requestFocus />
+
+
+            <ImageView
+                android:id="@+id/test_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/icon_sign_log"
+                android:layout_gravity="top"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/icon_image"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:id="@+id/sign_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/test_imageView"
+                android:layout_marginTop="@dimen/icon_form_margin"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/email_signin_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:theme="@style/TextLabel">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/email_signin_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/White"
+                        android:theme="@style/EditTextTheme" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_signin_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_signin_form"
+                    android:layout_marginBottom="10dp"
+                    android:theme="@style/TextLabel">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/White"
+                        android:theme="@style/EditTextTheme" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/username_login_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password_signin_form">
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sign_form"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sign_in"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/sign_log_button_margin"
+                    android:layout_marginRight="@dimen/sign_log_button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_next"
+                    android:text="Sign up"
+                    android:textColor="@color/White" />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
